@@ -1,0 +1,13 @@
+{
+  "projects": [
+    {
+      "slug": "pruszkow",
+      "title": "Pruszków",
+      "thumb": "projects/pruszkow/pruszkow2.jpg",
+      "images": [
+        "projects/pruszkow/pruszkow1.jpg",
+        "projects/pruszkow/pruszkow2.jpg"
+      ]
+    }
+  ]
+}

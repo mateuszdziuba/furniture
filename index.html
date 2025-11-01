@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meble na Wymiar - Twój Profesjonalny Warsztat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="logo">Meble na Wymiar</div>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#home" class="nav-link">Start</a></li>
+            <li><a href="#o-nas" class="nav-link">O Nas</a></li>
+            <li><a href="#oferta" class="nav-link">Oferta</a></li>
+            <li>
+              <a href="#realizacje-fazy" class="nav-link">Fazy Realizacji</a>
+            </li>
+            <li><a href="#realizacje" class="nav-link">Realizacje</a></li>
+            <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+            <li class="nav-phone-desktop">
+              <a href="tel:451667885" class="nav-phone-btn">
+                <i class="fas fa-phone"></i> Zadzwoń
+              </a>
+            </li>
+            <li class="nav-phone-mobile">
+              <a href="tel:451667885" class="nav-phone-btn">
+                <i class="fas fa-phone"></i> Zadzwoń: 451 667 885
+              </a>
+            </li>
+          </ul>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-wrapper">
+          <div class="hero-content">
+            <h1>Meble na Wymiar</h1>
+            <p class="hero-subtitle">
+              Tworzymy meble dopasowane do Twoich potrzeb i wymiarów
+            </p>
+            <a href="#kontakt" class="cta-button">Zamów Konsultację</a>
+          </div>
+          <div class="hero-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
+              alt="Eleganckie meble"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O Nas Section -->
+    <section id="o-nas" class="section">
+      <div class="container">
+        <h2 class="section-title">O Nas</h2>
+        <div class="content-grid">
+          <div class="content-text">
+            <div class="about-image">
+              <img
+                src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=800&q=80"
+                alt="Warsztat stolarski"
+                loading="lazy"
+              />
+            </div>
+            <p>
+              Jesteśmy doświadczonym zespołem stolarzy, który od wielu lat
+              tworzy meble na wymiar najwyższej jakości. Specjalizujemy się w
+              projektowaniu i wykonywaniu mebli kuchennych, szaf, garderób oraz
+              mebli biurowych.
+            </p>
+            <p>
+              Każdy projekt traktujemy indywidualnie, dostosowując się do
+              potrzeb i wymagań klienta. Dzięki naszemu doświadczeniu i
+              precyzji, tworzymy meble, które będą służyć przez lata.
+            </p>
+          </div>
+          <div class="features">
+            <div class="feature-item">
+              <h3>Doświadczenie</h3>
+              <p>Ponad 15 lat na rynku</p>
+            </div>
+            <div class="feature-item">
+              <h3>Jakość</h3>
+              <p>Używamy najlepszych materiałów</p>
+            </div>
+            <div class="feature-item">
+              <h3>Indywidualność</h3>
+              <p>Każdy projekt jest wyjątkowy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Oferta Section -->
+    <section id="oferta" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Nasza Oferta</h2>
+        <div class="offer-grid">
+          <div class="offer-card">
+            <div class="offer-image">
+              <img
+                src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=600&q=80"
+                alt="Meble kuchenne"
+                loading="lazy"
+              />
+            </div>
+            <h3>Meble Kuchenne</h3>
+            <p>
+              Kompletne wyposażenie kuchni na wymiar - szafki, blaty, wyspy
+              kuchenne dopasowane do Twojej przestrzeni.
+            </p>
+          </div>
+          <div class="offer-card">
+            <div class="offer-image">
+              <img
+                src="https://images.unsplash.com/photo-1631889993954-8ce10fa6c1a0?auto=format&fit=crop&w=600&q=80"
+                alt="Szafy i garderoby"
+                loading="lazy"
+              />
+            </div>
+            <h3>Szafy i Garderoby</h3>
+            <p>
+              Praktyczne rozwiązania do przechowywania ubrań - od małych szafek
+              po duże garderoby wbudowane.
+            </p>
+          </div>
+          <div class="offer-card">
+            <div class="offer-image">
+              <img
+                src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=600&q=80"
+                alt="Meble biurowe"
+                loading="lazy"
+              />
+            </div>
+            <h3>Meble Biurowe</h3>
+            <p>
+              Biurka, regały i systemy przechowywania dostosowane do Twojego
+              miejsca pracy.
+            </p>
+          </div>
+          <div class="offer-card">
+            <div class="offer-image">
+              <img
+                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=600&q=80"
+                alt="Meble pokojowe"
+                loading="lazy"
+              />
+            </div>
+            <h3>Meble Pokojowe</h3>
+            <p>
+              Komody, biblioteki, łóżka i inne meble dopasowane do wnętrza
+              Twojego domu.
+            </p>
+          </div>
+          <div class="offer-card">
+            <div class="offer-image">
+              <img
+                src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=600&q=80"
+                alt="Meble łazienkowe"
+                loading="lazy"
+              />
+            </div>
+            <h3>Meble Łazienkowe</h3>
+            <p>
+              Szafki podumywalkowe, witryny, meble wolnostojące - eleganckie
+              rozwiązania do każdej łazienki.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fazy Realizacji Section -->
+    <section id="realizacje-fazy" class="section">
+      <div class="container">
+        <h2 class="section-title">Fazy Realizacji</h2>
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="process-icon">
+              <i class="fas fa-comments"></i>
+            </div>
+            <div class="process-number">01</div>
+            <h3>Konsultacja</h3>
+            <p>
+              Omawiamy Twoje potrzeby, przestrzeń i wizję. Wspólnie ustalamy
+              wymagania i budżet projektu.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="process-icon">
+              <i class="fas fa-ruler-combined"></i>
+            </div>
+            <div class="process-number">02</div>
+            <h3>Pomiar</h3>
+            <p>
+              Dokonujemy dokładnych pomiarów przestrzeni, biorąc pod uwagę
+              wszystkie szczegóły architektoniczne.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="process-icon">
+              <i class="fas fa-drafting-compass"></i>
+            </div>
+            <div class="process-number">03</div>
+            <h3>Projekt</h3>
+            <p>
+              Tworzymy szczegółowy projekt 3D z wizualizacją, który prezentujemy
+              do akceptacji przed rozpoczęciem pracy.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="process-icon">
+              <i class="fas fa-hammer"></i>
+            </div>
+            <div class="process-number">04</div>
+            <h3>Realizacja</h3>
+            <p>
+              Wykonujemy meble według zatwierdzonego projektu, używając
+              najlepszych materiałów i technik.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="process-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <div class="process-number">05</div>
+            <h3>Montaż</h3>
+            <p>
+              Profesjonalnie montujemy meble na miejscu, dbając o każdy szczegół
+              i dopasowanie.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="process-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="process-number">06</div>
+            <h3>Oddanie</h3>
+            <p>
+              Przekazujemy gotowe meble wraz z gwarancją i pełnym wsparciem
+              serwisowym.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Realizacje Section -->
+    <section id="realizacje" class="section">
+      <div class="container">
+        <h2 class="section-title">Nasze Realizacje</h2>
+        <div id="realizacje-gallery" class="portfolio-grid">
+          <!-- JS will render project groups here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt Section -->
+    <section id="kontakt" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Skontaktuj Się Z Nami</h2>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="contact-item">
+              <h3>Telefon</h3>
+              <p>451 667 885</p>
+            </div>
+            <div class="contact-item">
+              <h3>Email</h3>
+              <p>kontakt@meblenawymiar.pl</p>
+            </div>
+            <div class="contact-item">
+              <h3>Godziny Otwarcia</h3>
+              <p>Pon - Pt: 8:00 - 18:00<br />Sb: 9:00 - 14:00</p>
+            </div>
+          </div>
+          <form
+            class="contact-form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="814f9815-ecd6-480a-bebc-74bbac427318"
+            />
+            <input type="text" placeholder="Imię i Nazwisko" required />
+            <input type="email" placeholder="Email" required />
+            <input type="tel" placeholder="Telefon" />
+            <textarea placeholder="Wiadomość" rows="5" required></textarea>
+            <button type="submit" class="submit-button">Wyślij</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Meble na Wymiar. Wszystkie prawa zastrzeżone.</p>
+      </div>
+    </footer>
+
+    <!-- inline gallery manifest to avoid fetch/CORS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
