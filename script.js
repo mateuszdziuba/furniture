@@ -32,16 +32,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Form submission handler
-const contactForm = document.querySelector(".contact-form");
-if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    alert("Dziękujemy za wiadomość! Skontaktujemy się z Państwem wkrótce.");
-    contactForm.reset();
-  });
-}
-
 // Add active state to navigation on scroll
 const sections = document.querySelectorAll("section[id]");
 
