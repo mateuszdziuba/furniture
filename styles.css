@@ -42,19 +42,30 @@ h6 {
 }
 
 .logo {
-  font-family: "Playfair Display", serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 40px;
+.site-logo {
+  height: 44px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 6px;
 }
 
-@media (max-width: 768px) {
-  .container {
-    padding: 0 24px;
-  }
+.site-name {
+  font-weight: 500; /* keep previous heading weight preference */
+  font-size: 1.125rem;
+}
+
+/* small screen tweak */
+@media (max-width: 480px) {
+  .site-logo { height: 36px; }
+  .site-name { font-size: 1rem; }
 }
 
 /* Navigation */
