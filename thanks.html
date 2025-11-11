@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dziękujemy — Pracownia Dedal</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* minimal helper to keep layout consistent with the main site */
+      .thanks-wrap {
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 16px;
+      }
+      .thanks-card {
+        max-width: 820px;
+        width: 100%;
+        text-align: center;
+        padding: 40px;
+        border-radius: 14px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        background: var(--section-bg, #ffffff);
+      }
+      .thanks-card h1 {
+        margin-bottom: 8px;
+      }
+      .thanks-card p {
+        margin: 12px 0;
+        color: var(--muted, #666);
+      }
+      .thanks-card .cta-button {
+        margin-top: 18px;
+      }
+      .thanks-card .small {
+        font-size: 0.95rem;
+        color: var(--muted, #666);
+        margin-top: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="thanks-wrap">
+      <section class="thanks-card">
+        <h1>Dziękujemy!</h1>
+        <p>
+          Twoja wiadomość została wysłana. Skontaktujemy się z Tobą jak
+          najszybciej.
+        </p>
+
+        <a class="cta-button" href="index.html">Powrót na stronę główną</a>
+
+        <p class="small">
+          Zostaniesz automatycznie przekierowany za
+          <span id="countdown">6</span> s. Jeśli nic się nie dzieje, kliknij
+          przycisk powyżej.
+        </p>
+      </section>
+    </main>
+
+    <script>
+      // krótkie odliczanie i przekierowanie do index.html
+      (function () {
+        const el = document.getElementById("countdown");
+        let t = 6;
+        const iv = setInterval(() => {
+          t--;
+          if (el) el.textContent = t;
+          if (t <= 0) {
+            clearInterval(iv);
+            window.location.href = "index.html";
+          }
+        }, 1000);
+      })();
+    </script>
+  </body>
+</html>
